@@ -66,7 +66,7 @@ app.get("/projects", (req, res) => {
         description:
           "This was a project I did for a News Website. I used HTML, Tailwind CSS and React.js to create a responsive website.",
         imageUrl:
-          "blob:https://www.pinterest.com/ffce2a7c-4c4b-48f6-a594-577d8e5b603f",
+          "https://i.pinimg.com/736x/59/36/79/59367941f4d27899f520871e569adf78.jpg",
         detailsUrl:
           "https://i.pinimg.com/736x/66/fa/df/66fadffd972e35321e3c687db2d8e625.jpg",
         technology: "HTML, Tailwind CSS, React.js",
