@@ -1,7 +1,20 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 
 const PORT = 5000;
+
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      // allow requests with no origin (like mobile apps or curl requests)
+      if (!origin) return callback(null, true);
+      return callback(null, origin);
+    },
+
+    credentials: true,
+  })
+);
 
 app.use(express.json());
 
